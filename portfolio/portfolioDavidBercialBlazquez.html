@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eteon _03 — Gameplay Programmer Portfolio</title>
+<style>
+  /* Reset y base */
+  * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0b101f; color: #fff; line-height: 1.6; }
+
+  a { color: #00f0ff; text-decoration: none; transition: color 0.3s; }
+  a:hover { color: #ffcb05; }
+
+  /* Contenedor principal */
+  .container { width: 90%; max-width: 1100px; margin: auto; padding: 50px 0; }
+
+  /* Animaciones de aparición */
+  .fade-in { opacity: 0; transform: translateY(30px); animation: fadeInUp 1s forwards; }
+  .fade-in.delay-1 { animation-delay: 0.3s; }
+  .fade-in.delay-2 { animation-delay: 0.6s; }
+  .fade-in.delay-3 { animation-delay: 0.9s; }
+  .fade-in.delay-4 { animation-delay: 1.2s; }
+
+  @keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Títulos y secciones */
+  h1 { font-size: 3em; color: #00f0ff; text-shadow: 0 0 10px #00f0ff; margin-bottom: 15px; }
+  h2 { font-size: 2em; color: #ffcb05; margin: 40px 0 25px; border-bottom: 3px solid #ffcb05; display: inline-block; padding-bottom: 5px; }
+  h3 { font-size: 1.6em; color: #ffffff; margin-bottom: 10px; }
+
+  .section { margin-bottom: 60px; }
+
+  /* Boxes de proyectos y experiencia */
+  .box { 
+    background: linear-gradient(145deg, #112240, #0b101f); 
+    padding: 25px; 
+    border-radius: 12px; 
+    margin-bottom: 30px; 
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+  }
+  .box:hover { transform: translateY(-5px); box-shadow: 0 12px 20px rgba(0,0,0,0.6); }
+
+  /* Botones */
+  .btn { display: inline-block; background: #00f0ff; color: #0b101f; padding: 12px 22px; border-radius: 8px; margin: 10px 10px 0 0; font-weight: bold; transition: background 0.3s, transform 0.2s; }
+  .btn:hover { background: #ffcb05; transform: scale(1.05); }
+
+  /* Skills */
+  .skills span { display: inline-block; background: #1b2a47; padding: 6px 12px; border-radius: 8px; margin: 6px; transition: transform 0.2s; }
+  .skills span:hover { transform: scale(1.1); }
+
+  /* Responsive */
+  @media (max-width: 700px) {
+    h1 { font-size: 2.2em; }
+    h2 { font-size: 1.6em; }
+    h3 { font-size: 1.3em; }
+    .btn { padding: 10px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Introducción -->
+  <div class="section fade-in">
+    <h1>Eteon _03</h1>
+    <p>Junior Gameplay Programmer | C++, Unreal Engine 5 | Gameplay Systems, Vehicle Physics, Modular Architecture</p>
+    <p>I create gameplay mechanics, experiment with vehicle physics, and build modular systems in Unreal Engine and C++. Passionate about learning, iterating, and working closely with multidisciplinary teams to bring ideas to life.</p>
+  </div>
+
+  <!-- Proyectos -->
+  <div class="section fade-in delay-1">
+    <h2>Projects</h2>
+
+    <div class="box">
+      <h3>Vehicle Physics & Gameplay Projects "Paradox Rift" (TFG / Prototype — Unreal Engine 5)</h3>
+      <p><strong>Role:</strong> Gameplay Programmer</p>
+      <p><strong>Tech:</strong> UE5, C++, Chaos Vehicle, Physics</p>
+      <p>Developed custom vehicle physics prototypes and TFG project. Implemented drift mechanics, vehicle behaviour experimentation, and modular architecture for gameplay systems. Focused on clean, reusable design for easy tuning and testing of different physics profiles.</p>
+    </div>    
+
+    <div class="box">
+      <h3>Gameplay Systems Sandbox (Unreal Engine / C++)</h3>
+      <p><strong>Role:</strong> Gameplay & Systems Programmer</p>
+      <p><strong>Tech:</strong> UE5, C++</p>
+      <p>Reusable gameplay components for testing abilities, input systems, and character mechanics. Modular design and editor debugging tools included.</p>
+    </div>
+
+    <div class="box">
+      <h3>Concurrency & Rendering Engine Exercise (C++)</h3>
+      <p><strong>Role:</strong> Systems Programmer</p>
+      <p><strong>Tech:</strong> C++, ThreadPool, SDL2, concurrency</p>
+      <p>Implemented custom thread pool, concurrent input processing, 25 FPS asynchronous framebuffer updates, and multi-threaded geometry transforms for engine-side experimentation.</p>
+    </div>
+  </div>
+
+  <!-- Experiencia -->
+  <div class="section fade-in delay-2">
+    <h2>Professional Experience</h2>
+    <div class="box">
+      <h3>Level Programming Assistant — Plop! Studio</h3>
+      <p>Worked on a long-term commercial game. Contributed to gameplay features, collaborated with designers, and gained experience with real production workflows.</p>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="section fade-in delay-3">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Unreal Engine 5</span>
+      <span>C++</span>
+      <span>Blueprint</span>
+      <span>Unity</span>
+      <span>C#</span>
+      <span>OpenGL</span>
+      <span>SDL2</span>
+      <span>SQL</span>
+      <span>JavaScript</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Git</span>
+      <span>Gameplay Systems</span>
+      <span>Modular Architecture</span>
+      <span>Concurrency</span>
+      <span>Debugging</span>
+      
+    </div>
+  </div>
+
+  <!-- Links -->
+  <div class="section fade-in delay-4">
+    <h2>Links</h2>
+    <p>
+      <a href="https://github.com/Eteon03" class="btn">GitHub</a>
+      <a href="https://www.linkedin.com/in/david-bercial-bl%C3%A1zquez-249067291/" class="btn">LinkedIn</a>
+      <a href="https://drive.google.com/file/d/1p9F8tmMZWgaqCKEycTeML0tz03cUgEcx/view?usp=sharing" class="btn">CV PDF</a>
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
